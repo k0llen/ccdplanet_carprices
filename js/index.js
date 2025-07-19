@@ -25,6 +25,7 @@ function createModelList() {
             const car = CarsDB[inputMarkValue][model];
             const li = document.createElement('li');
             li.dataset.value = model;
+            li.tabIndex='0';
             li.textContent = car.FullName;
             li.classList.add('model-btn');
             selectModel.querySelector('ul').appendChild(li);
