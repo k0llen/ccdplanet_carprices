@@ -34,13 +34,13 @@ function createModelList() {
 
 window.addEventListener('click', (e) =>{
     //Select Mark opening
-    if(selectMark.querySelector('p').contains(e.target)){
+    if(e.target.closest('.selects_select-mark p')){
         selectModel.classList.remove('active');
         selectMark.classList.add('active');
     }
 
     //Select model opening
-    if(selectModel.querySelector('p').contains(e.target)){
+    if(e.target.closest('.selects_select-model p')){
         selectMark.classList.remove('active');
         selectModel.classList.add('active');
     }
