@@ -1,0 +1,390 @@
+/* Reset styles start */
+html {
+  box-sizing: border-box;
+  cursor: default;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #1b64fa;
+}
+
+::selection {
+  color: #fff;
+  background: #1b64fa;
+}
+
+html,
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+figure {
+  margin: 0 auto;
+}
+
+blockquote {
+  margin: 0;
+}
+
+sup,
+sub {
+  line-height: 1em;
+  font-size: 0.75em;
+}
+
+a {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-property: background-size;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button,
+[role=button],
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: url(img/cursor-rect.svg) 25 25, auto;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  color: inherit;
+  text-align: left;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  margin: 0;
+}
+button[disabled],
+[role=button][disabled],
+[type=button][disabled],
+[type=reset][disabled],
+[type=submit][disabled] {
+  cursor: initial;
+}
+
+/*input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="search"],*/
+select,
+textarea {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  margin: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+select::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+}
+select:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+select::placeholder,
+textarea::placeholder {
+  opacity: 1;
+}
+
+input[type=text]::-ms-clear, input[type=text]::-ms-reveal, input[type=email]::-ms-clear, input[type=email]::-ms-reveal, input[type=password]::-ms-clear, input[type=password]::-ms-reveal, input[type=tel]::-ms-clear, input[type=tel]::-ms-reveal, input[type=search]::-ms-clear, input[type=search]::-ms-reveal {
+  display: none;
+}
+input[type=text]::-webkit-search-decoration, input[type=text]::-webkit-search-cancel-button, input[type=text]::-webkit-search-results-button, input[type=text]::-webkit-search-results-decoration, input[type=email]::-webkit-search-decoration, input[type=email]::-webkit-search-cancel-button, input[type=email]::-webkit-search-results-button, input[type=email]::-webkit-search-results-decoration, input[type=password]::-webkit-search-decoration, input[type=password]::-webkit-search-cancel-button, input[type=password]::-webkit-search-results-button, input[type=password]::-webkit-search-results-decoration, input[type=tel]::-webkit-search-decoration, input[type=tel]::-webkit-search-cancel-button, input[type=tel]::-webkit-search-results-button, input[type=tel]::-webkit-search-results-decoration, input[type=search]::-webkit-search-decoration, input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-results-button, input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+input[type=number] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+select {
+  cursor: pointer;
+}
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+select::-ms-expand {
+  display: none;
+}
+
+textarea {
+  resize: none;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+svg,
+use {
+  transform: translateZ(0);
+  display: block;
+}
+
+svg {
+  max-width: 100%;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  margin: 0;
+  width: 100px;
+  background-color: fade(#000, 18%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* Reset styles end */
+.wrapper {
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #2f4c7a;
+  background: linear-gradient(90deg, rgb(47, 76, 122) 0%, rgb(15, 86, 102) 50%, rgb(47, 76, 122) 60%, rgb(28, 84, 96) 100%);
+  color: #FFF;
+}
+
+section {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+section .selects {
+  width: 20%;
+  min-width: 200px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+section .selects_select-mark_input_hidden, section .selects_select-model_input_hidden {
+  display: none;
+}
+section .selects_select-mark, section .selects_select-model {
+  position: relative;
+}
+section .selects_select-mark p, section .selects_select-model p {
+  cursor: pointer;
+  background-color: rgb(214, 210, 210);
+  color: #212121;
+  padding: 7px;
+  border-radius: 4px;
+  border: 1px solid;
+  transition: 0.3s all;
+}
+section .selects_select-mark p:hover, section .selects_select-model p:hover {
+  opacity: 0.7;
+}
+section .selects .btn-block {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+section .selects .btn-block_btn {
+  background-color: rgb(214, 210, 210);
+  color: #212121;
+  cursor: pointer;
+  text-align: center;
+  padding: 7px;
+  border-radius: 4px;
+  border: 1px solid;
+  transition: 0.3s all;
+  width: 100%;
+}
+section .selects .btn-block_btn:hover {
+  opacity: 0.7;
+}
+section p {
+  z-index: 1;
+}
+section ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px;
+  z-index: -1;
+  opacity: 0;
+  height: 0;
+  width: 100%;
+  background-color: rgb(214, 210, 210);
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: 0.3s all;
+  border-radius: 4px;
+  scrollbar-color: rgb(214, 210, 210) rgb(60, 68, 147);
+}
+section ul li {
+  padding: 3px;
+  cursor: pointer;
+  color: #212121;
+}
+section ul li:hover {
+  opacity: 0.7;
+}
+section ul li + li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+section .active ul {
+  opacity: 1;
+  z-index: 2;
+  height: 150px;
+}
+section .result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(214, 210, 210);
+  color: #212121;
+  box-shadow: 5px 5px 1000px #000;
+  transition: 0.3s all;
+  transform: scale(0);
+  padding: 40px;
+  border-radius: 8px;
+}
+section .result_content {
+  display: flex;
+  gap: 20px;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section .result_content .result-car-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgb(214, 210, 210);
+  display: grid;
+  grid-template-columns: repeat(2, 2);
+}
+section .result_content .result-car-info p {
+  position: relative;
+  padding-left: 10px;
+}
+section .result_content .result-car-info p::before {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #212121;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+section .result_content .result-car-info p + p {
+  margin-top: 10px;
+}
+section .result-block-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+section .result-block-close span {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #000;
+  transform: rotate(45deg);
+}
+section .result-block-close span::before {
+  position: absolute;
+  box-sizing: border-box;
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: #000;
+  transform: rotate(90deg);
+}
+section .result.active {
+  transform: scale(1);
+}/*# sourceMappingURL=main.css.map */

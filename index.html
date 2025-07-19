@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Car Costs</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <section>
+                <div class="selects">
+                    <div class="selects_select-mark">
+                        <input type="text" value="" class="selects_select-mark_input_hidden" id="input-mark">
+                        <p>Выберите Марку</p>
+                        <ul>
+                            <li class="mark-btn" id="Audi">Audi</li>
+                            <li class="mark-btn" id="AstonMartin">Aston Martin</li>
+                            <li class="mark-btn" id="AlfaRomeo">Alfa Romeo</li>
+                            <li class="mark-btn" id="BMW">BMW</li>
+                            <li class="mark-btn" id="Bentley">Bentley</li>
+                            <li class="mark-btn" id="Bugatti">Bugatti</li>
+                            <li class="mark-btn" id="Cadillac">Cadillac</li>
+                            <li class="mark-btn" id="Chevrolet">Chevrolet</li>
+                            <li class="mark-btn" id="Daewoo">Daewoo</li>
+                            <li class="mark-btn" id="Dodge">Dodge</li>
+                            <li class="mark-btn" id="Ferrari">Ferrari</li>
+                            <li class="mark-btn" id="Ford">Ford</li>
+                            <li class="mark-btn" id="Honda">Honda</li>
+                            <li class="mark-btn" id="Jeep">Jeep</li>
+                            <li class="mark-btn" id="Kamaz">КАМАЗ</li>
+                            <li class="mark-btn" id="Scania">Scania</li>
+                            <li class="mark-btn" id="Koenigsegg">Koenigsegg</li>
+                            <li class="mark-btn" id="Lamborghini">Lamborghini</li>
+                            <li class="mark-btn" id="Lexus">Lexus</li>
+                            <li class="mark-btn" id="Mazda">Mazda</li>
+                            <li class="mark-btn" id="Mclaren">Mclaren</li>
+                            <li class="mark-btn" id="MercedesBenz">Mercedes-Benz</li>
+                            <li class="mark-btn" id="Mitsubishi">Mitsubishi</li>
+                            <li class="mark-btn" id="Nissan">Nissan</li>
+                            <li class="mark-btn" id="Porsche">Porsche</li>
+                            <li class="mark-btn" id="Pagani">Pagani</li>
+                            <li class="mark-btn" id="RangeRove">Range Rover</li>
+                            <li class="mark-btn" id="RollsRoyce">Rolls-Royce</li>
+                            <li class="mark-btn" id="Subaru">Subaru</li>
+                            <li class="mark-btn" id="Skoda">Skoda</li>
+                            <li class="mark-btn" id="Toyota">Toyota</li>
+                            <li class="mark-btn" id="Volkswagen">Volkswagen</li>
+                            <li class="mark-btn" id="Volvo">Volvo</li>
+                            <li class="mark-btn" id="VAZ">ВАЗ</li>
+                            <li class="mark-btn" id="GAZ">ГАЗ</li>
+                            <li class="mark-btn" id="Motorcycles">Мотоциклы</li>
+                            <li class="mark-btn" id="WorkingTech">Рабочий транспорт</li>
+                            <li class="mark-btn" id="WaterTech">Водный транспорт</li>
+                            <li class="mark-btn" id="FlyingTech">Летный транспорт</li>
+                        </ul>
+                    </div>
+                    <div class="selects_select-model">
+                        <input type="text" value="" class="selects_select-model_input_hidden" id="input-model">
+                        <p>Выберите Модель</p>
+                        <ul></ul>
+                    </div>
+                    <div class="btn-block">
+                        <button class="btn-block_btn" id="btn-show-results">Найти</button>
+                    </div>
+                </div>
+                <div class="result" id="result-block">
+                    <div class="result-block-close" id="result-close">
+                        <span></span>
+                    </div>
+                    <div class="result_content">
+
+                        <div class="result-car-info" id="car-info-wrapper">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="./js/DB.js"></script>
+<script src="./js/index.js"></script>
+</html>
