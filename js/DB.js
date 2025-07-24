@@ -420,6 +420,14 @@ const CarsDB={
             carPic:'./img/kamaz_6520.jpg',
         },
     },
+    Kia:{
+        stinger:{
+            FullName:"Kia Stinger",
+            cost:3500000,
+            sellprice:350000*0.7,
+            carPic:'./img/kia_stinger.jpg',
+        },
+    },
     Koenigsegg:{
         ageraR:{
             FullName:"Koenigsegg Agera R",
@@ -566,6 +574,12 @@ const CarsDB={
             cost:850000,
             sellprice:850000*0.7,
             carPic:'./img/mercedes_e55.jpg',
+        },        
+        e63W211:{
+            FullName:"Mercedes-Benz E63 AMG W211",
+            cost:3900000,
+            sellprice:3900000*0.7,
+            carPic:'./img/mercedes_e63_w211.jpg',
         },
         e63W212:{
             FullName:"Mercedes-Benz E63 AMG S 4Matic W212",
@@ -640,6 +654,12 @@ const CarsDB={
             cost:695000,
             sellprice:695000*0.7,
             carPic:'./img/mazda_mx5.jpg',
+        },
+        mx5md:{
+            FullName:"Mazda MX-5 (MD)",
+            cost:2400000,
+            sellprice:2400000*0.7,
+            carPic:'./img/mazda_mx5_md.jpg',
         },
         rx7:{
             FullName:"Mazda RX7",
@@ -858,6 +878,13 @@ const CarsDB={
             cost:570000,
             sellprice:570000*0.7,
             carPic:'./img/toyota_chaser.jpg',
+        },
+        
+        landCruiser100:{
+            FullName:"Toyota Land Cruiser 100",
+            cost:2500000,
+            sellprice:2500000*0.7,
+            carPic:'./img/toyota_land_cruiser_100.jpg',
         },
         landCruiser200:{
             FullName:"Toyota Land Cruiser 200",

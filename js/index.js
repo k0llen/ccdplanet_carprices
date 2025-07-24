@@ -113,11 +113,7 @@ window.addEventListener('click', (e) =>{
         }
     }
 
-    if(resultClose.contains(e.target) && !resultBlock.contains(e.target)){
-        resultBlock.classList.remove('active');
-    }
-
-    if(!resultBlock.contains(e.target) && resultBlock.classList.contains('active') && !btnShowResults.contains(e.target) || resultClose.contains(e.target)){
+    if(!e.target.closest('#result-block') && resultBlock.classList.contains('active') && !e.target.closest('#btn-show-results') || e.target.closest('#result-close')){
         resultBlock.classList.remove('active');
     }
 
