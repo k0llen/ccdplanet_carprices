@@ -81,9 +81,8 @@ window.addEventListener('click', (e) =>{
         
         // Устанавливаем фон
         const resultBlock = document.getElementById('result-block');
-        resultBlock.style.backgroundImage = `url('${car.carPic}')`;
-        resultBlock.style.backgroundSize = 'cover';
-        resultBlock.style.backgroundPosition = 'center';
+        resultBlock.style.background = `url('${car.carPic}') no-repeat center 35%, #2f3f58`;
+        resultBlock.style.backgroundSize = 'contain';
         
         // Заполняем инфо-блок
         const infoWrapper = document.getElementById('car-info-wrapper');

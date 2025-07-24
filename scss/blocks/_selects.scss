@@ -18,14 +18,15 @@ section{
             position: relative;
             p{
                 cursor: pointer;
-                background-color: rgb(214, 210, 210);
-                color: #212121;
+                background-color: rgb(62, 97, 194);
+                color: #fff;
                 padding: 7px;
-                border-radius: 4px;
-                border: 1px solid;
+                border-radius: 8px;
+                border: 1px solid #fff;
                 transition: .3s all;
                 &:hover{
-                    opacity: .7;
+                    color: #212121;
+                    background-color: rgb(214, 210, 210);
                 }
             }
         }
@@ -38,17 +39,17 @@ section{
             width: 100%;
             justify-content: center;
             &_btn{
-                background-color: rgb(214, 210, 210);
-                color: #212121;
+                background-color: rgb(62, 97, 194);
+                color: #fff;
                 cursor: pointer;
                 text-align: center;
                 padding: 7px;
                 border-radius: 4px;
-                border: 1px solid;
+                border: 1px solid #fff;
                 transition: .3s all;
                 width: 100%;
                 &:hover{
-                    opacity: .7;
+                    color: #212121;
                 }
             }
         }
@@ -60,14 +61,14 @@ section{
     
     ul{
         position: absolute;
-        top: 0;
+        top: 100%;
         left: 0;
         padding: 4px;
         z-index: -1;
         opacity: 0;
         height: 0;
         width: 100%;
-        background-color: rgb(214, 210, 210);
+        background-color: rgb(62, 97, 194);
         overflow-y: auto;
         overflow-x: hidden;
         transition: .3s all;
@@ -77,11 +78,14 @@ section{
         scrollbar-color: rgb(214, 210, 210) rgb(60, 68, 147);
 
         li{
-            padding: 3px;
+            padding: 8px;
             cursor: pointer;
-            color: #212121;
+            color: #fff;
+            border-radius: 4px;
+            transition: .3s all;
             &:hover{
-                opacity: .7;
+                color: #212121;
+                background-color: rgb(214, 210, 210);
             }
             
             
@@ -116,6 +120,7 @@ section{
         transform: scale(0);
         padding: 40px;
         border-radius: 8px;
+        opacity: 0;
 
         &_content{
             display: flex;
@@ -162,11 +167,12 @@ section{
         
         &-block-close{
             position: absolute;
-            top: 20px;
+            top: 25px;
             right: 20px;
             width: 20px;
             height: 20px;
             cursor: pointer;
+        
 
             span{
                 position: relative;
@@ -175,6 +181,7 @@ section{
                 height: 2px;
                 background: #000;
                 transform: rotate(45deg);
+                transition: .3s all;
                 &::before{
                     position: absolute;
                     box-sizing: border-box;
@@ -187,12 +194,18 @@ section{
                     top: 0px;
                     background: #000;
                     transform: rotate(90deg);
+                }            
+                &:hover{
+                    opacity: .7;
+                    transform: rotate(360deg);
                 }
             }
+
         }
     }
     .result.active{
         transform: scale(1);
+        opacity: 1;
     }
 
 }
