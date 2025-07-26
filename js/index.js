@@ -6,6 +6,8 @@ const btnShowResults = document.getElementById('btn-show-results');
 const resultBlock = document.getElementById('result-block');
 const resultClose = document.getElementById('result-close');
 const resultCarInfo = document.getElementById('car-info-wrapper');
+const resultContentPic = document.getElementById('result-pic-block');
+const screenWidth = window.innerWidth;
 
 
 
@@ -79,10 +81,16 @@ window.addEventListener('click', (e) =>{
         const car = CarsDB[brand]?.[model];
         if (!car) return;
         
-        // Устанавливаем фон
         const resultBlock = document.getElementById('result-block');
-        resultBlock.style.background = `url('${car.carPic}') no-repeat center 35%, #2f3f58`;
-        resultBlock.style.backgroundSize = 'contain';
+        // Устанавливаем фон
+        if(screenWidth >= 1024){
+            resultBlock.style.background = `url('${car.carPicDesctop}') no-repeat center 35%, #2f3f58`;
+            resultBlock.style.backgroundSize = 'cover';
+        } else {
+            resultBlock.style.background = `url('${car.carPicTablet}') no-repeat center 35%, #2f3f58`;
+            resultBlock.style.backgroundSize = 'cover';
+        }
+
         
         // Заполняем инфо-блок
         const infoWrapper = document.getElementById('car-info-wrapper');
@@ -95,13 +103,18 @@ window.addEventListener('click', (e) =>{
         
         // Цена покупки
         const costP = document.createElement('p');
-        costP.textContent = `Цена покупки с салона - ${car.cost.toLocaleString('ru-RU')}`;
+        costP.textContent = `Цена покупки с салона - ${car.cost.toLocaleString('ru-RU')} ${car.currency}`;
         infoWrapper.appendChild(costP);
         
         // Цена утилизации
         const sellP = document.createElement('p');
-        sellP.textContent = `Цена утилизации - ${car.sellprice.toLocaleString('ru-RU')}`;
+        sellP.textContent = `Цена утилизации - ${car.sellprice.toLocaleString('ru-RU')} ${car.currency}`;
         infoWrapper.appendChild(sellP);
+
+        // Какой автосалон
+        const storeP = document.createElement('p');
+        storeP.textContent = `${car.store}`;
+        infoWrapper.appendChild(storeP);
     }
 
     //Наполнение и показ результата селектов
