@@ -369,6 +369,7 @@ section .result_content .result-car-info p + p {
 }
 section .result-block-close {
   position: absolute;
+  z-index: 10;
   top: 25px;
   right: 20px;
   width: 20px;
