@@ -403,4 +403,36 @@ section .result-block-close span:hover {
 section .result.active {
   transform: scale(1);
   opacity: 1;
+}
+
+@media screen and (max-width: 780px) {
+  section .result {
+    height: 100%;
+    padding: 0;
+    border-width: 8px;
+  }
+  section .result-block-close {
+    top: 17px;
+    right: 10px;
+  }
+  section .result-block-close span {
+    background: #fff;
+  }
+  section .result-block-close span::before {
+    background: #fff;
+  }
+  section .result_content {
+    font-size: 13px;
+    line-height: 16px;
+    gap: 0;
+  }
+  section .result_content p + p {
+    margin-top: 5px;
+  }
+  section .result_content .result-car-info {
+    padding: 5px 15px;
+    width: 100%;
+    max-width: none;
+    border-width: 5px;
+  }
 }/*# sourceMappingURL=main.css.map */

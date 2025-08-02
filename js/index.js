@@ -84,11 +84,11 @@ window.addEventListener('click', (e) =>{
         const resultBlock = document.getElementById('result-block');
         // Устанавливаем фон
         if(screenWidth >= 1024){
-            resultBlock.style.background = `url('${car.carPicDesctop}') no-repeat center 35%, #2f3f58`;
+            resultBlock.style.background = `url('${car.carPicDesctop}') no-repeat center 35%, #232323`;
             resultBlock.style.backgroundSize = 'cover';
         } else {
-            resultBlock.style.background = `url('${car.carPicTablet}') no-repeat center 35%, #2f3f58`;
-            resultBlock.style.backgroundSize = 'cover';
+            resultBlock.style.background = `url('${car.carPicTablet}') no-repeat center 20%, #232323`;
+            resultBlock.style.backgroundSize = 'contain';
         }
 
         

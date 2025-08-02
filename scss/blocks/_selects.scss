@@ -211,3 +211,40 @@ section{
 
 }
 
+
+@media screen and (max-width:780px){
+    section{
+        .result{
+            height: 100%;
+            padding: 0;
+            border-width: 8px;
+            
+            &-block-close{
+                top: 17px;
+                right: 10px;
+                span{
+                    background: #fff;
+                    &::before{
+                        background: #fff;
+                    }
+                }
+            }
+
+            &_content{
+                font-size: 13px;
+                line-height: 16px;
+                gap: 0;
+
+                p+p{
+                    margin-top: 5px;
+                }
+                .result-car-info{
+                    padding: 5px 15px;
+                    width: 100%;
+                    max-width: none;
+                    border-width: 5px;
+                }
+            }
+        }
+    }
+}
